@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Javascript on Steroids</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <h2>Challenge 1: Your age in days</h2>
+
+      <div class="flex-box-container-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            Click Me
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="flex-box-container-1">
+        <div id="flex-box-result"></div>
+      </div>
+    </div>
+
+
+    <div class="container-2">
+      <h2>Challenge 2: Cat Generator</h2>
+      <button class="btn btn-success" id="cat-generator" onclick="catGen()">Generate</button>
+
+      <div class="flex-box-container-2" id="flex-cat-gen"></div>
+         
+
+      </div>
+    </div>
+
+    <div class="container-3">
+      <h2>Challenge 3:Rock, Paper, Scissors</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id="rock" src="./images/rock.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        <img id="paper" src="./images/paper.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        <img id="scissors" src="./images/scissors.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+      </div>
+    </div>
+
+    <div class="container-4">
+      <h2>Challenge 4: Change The Colors of the buttons.</h2>
+      <div class="flex-color-pick" id="flex-color-pick-div">
+        <form action="">
+          <select name="backdrop" id="background" onchange="changeButtonColor(this)">
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="reset">Reset</option>
+          </select>
+
+          <button class="btn btn-primary">Wee</button>
+          <button class="btn btn-success">Yahoo</button>
+          <button class="btn btn-warning">Facebook</button>
+          <button class="btn btn-danger">Google</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="container-5">
+      <h2>Challenge 5: BlackJack</h2>
+      <h3><span id="blackjack-span">Let's Play</span></h3>
+      <div class="flex-blackjack-row-1">
+        <div id="your-block">
+          <h3>You:<span id="your-blackjack-result">0</span></h3>
+        </div>
+        <div id="dealers-block">
+          <h3>Dealer: <span id="dealer-blackjack-result">0</span></h3>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+          <button class="btn-lg btn-success mr-2" id="blackjack-stand-button">Stand</button>
+          <button class="btn-lg btn-warning mr-2" id="blackjack-deal-button">Deal</button>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+.container-1,.container-2,.container-3,.container-4,.container-5{
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+
+.flex-box-container-1,.flex-box-container-2, .flex-box-rps,.flex-color-pick, .flex-blackjack-row-1,.flex-blackjack-row-2, .flex-blackjack-row-3{
+  display: flex;
+  border: 1px solid black;
+  padding:10px;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: space-around;
+}
+.flex-box-container-1 div{
+  padding: 10px;
+  /* border: 1px solid black; */
+  align-items:center;
+}
+
+.flex-box-container-2{
+  border-top: none;
+}
+
+
+
+.flex-box-container-2 img{
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  /* border: 1px solid red; */
+}
+
+.flex-box-rps img:hover{
+  box-shadow: 0px 10px 50px rgba(37,50,233,1);
+}
+
+/* blackjack ko css haru */
+.flex-blackjack-row-1,.flex-blackjack-row-2{
+  background: url("../images/bgblackjack.jpg") center center;
+  color: #fff;
+  border: 1px solid black;
+  
+}
+
+.flex-blackjack-row-1 div{
+  border: 1px solid black;
+  flex:1;
+  height: 350px;
+  padding: 20px;
+  align-items: center;
+
+}
+.flex-blackjack-row-1 img{
+  width: 25%;
+  padding:10px;
+}
+.flex-blackjack-row-2 div{
+  border: 1px solid black;
+  padding: 20px;
+  flex:1;
+}
+.flex-blackjack-row-3 table,th,td{
+  padding: 10px;
+  border: 1px solid black;
+}
